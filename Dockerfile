@@ -42,3 +42,6 @@ RUN python manage.py collectstatic --noinput
 RUN rm /webodm/webodm/secret_key.py
 
 VOLUME /webodm/app/media
+RUN ls
+
+ENTRYPOINT /webodm/webodm.sh -start
