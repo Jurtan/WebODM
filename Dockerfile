@@ -9,7 +9,7 @@ RUN mkdir /webodm
 WORKDIR /webodm
 
 RUN curl --silent --location https://deb.nodesource.com/setup_8.x | bash -
-RUN apt-get -qq install -y nodejs
+RUN apt-get -qq install -y nodejs docker 
 
 # Configure use of testing branch of Debian
 RUN printf "Package: *\nPin: release a=stable\nPin-Priority: 900\n" > /etc/apt/preferences.d/stable.pref
