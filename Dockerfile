@@ -44,4 +44,4 @@ RUN rm /webodm/webodm/secret_key.py
 VOLUME /webodm/app/media
 RUN ls
 
-CMD [ "/webodm.sh -start"]
+ENTRYPOINT [ "/bin/bash", "webodm.sh -start"]
